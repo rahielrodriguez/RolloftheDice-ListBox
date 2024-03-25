@@ -88,5 +88,29 @@ Public Class RolloftheDice
         DisplayListBox.Items.Clear()
 
     End Sub
+    Private Sub RollToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RollToolStripMenuItem.Click
+        RollingDice()
 
+    End Sub
+
+    Private Sub ClearToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ClearToolStripMenuItem.Click
+        DisplayListBox.Items.Clear()
+
+    End Sub
+
+    Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
+        Me.Close()
+
+    End Sub
+    Sub AboutMessage()
+        'Sends out a message that provides information about the program and its functions.
+        MsgBox("This form is used to simulate the rolling of two dices." & vbCrLf _
+            & vbCrLf _
+               & "After pressing the ""Roll"" button, the sum of two dice numbers rolled is recorded. This action is repeated 1000 times. Pressing the ""Clear"" button erases the display, while the ""Exit"" button closes the form.")
+    End Sub
+
+    Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
+        AboutMessage()
+
+    End Sub
 End Class
