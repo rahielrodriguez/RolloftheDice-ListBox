@@ -49,6 +49,24 @@ Public Class RolloftheDice
             End Select
         Next
 
+        'Takes the header, converts it into an string and formats it.
+        For Each letter In header
+            headerRow += (CStr(letter) & "|").PadLeft(6)
+        Next
+
+        'Takes the resuls from the results table, converts them into a string and formats it
+        For Each number In resultsTable
+            dataRow += (CStr(number).PadLeft(4) & "|")
+        Next
+
+        'Sets format for the output and adds all the information to the listbox.
+        DisplayListBox.Items.Add(StrDup(25, " ") & "Roll of The Dice")
+        DisplayListBox.Items.Add(StrDup(80, "-"))
+        DisplayListBox.Items.Add(headerRow)
+        DisplayListBox.Items.Add(StrDup(80, "-"))
+        DisplayListBox.Items.Add(dataRow)
+        DisplayListBox.Items.Add(StrDup(80, "-"))
+
     End Sub
     Sub SetDefaults()
 
