@@ -1,4 +1,10 @@
-﻿Option Strict On
+﻿'Rahiel Rodriguez
+'RCET0265
+'Spring 2024
+'Roll of the Dice - List Box
+'https://github.com/rahielrodriguez/RolloftheDice-ListBox.git
+
+Option Strict On
 Option Explicit On
 
 Public Class RolloftheDice
