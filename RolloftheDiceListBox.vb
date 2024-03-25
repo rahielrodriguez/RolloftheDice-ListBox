@@ -57,5 +57,18 @@ Public Class RolloftheDice
 
         RollButton.Focus()
     End Sub
+    Private Sub RollButton_Click(sender As Object, e As EventArgs) Handles RollButton.Click
+        RollingDice()
+
+    End Sub
+    Private Sub Exit_Click(sender As Object, e As EventArgs) Handles ExitButton.Click
+        Me.Close()
+
+    End Sub
+
+    Private Sub ClearButton_Click(sender As Object, e As EventArgs) Handles ClearButton.Click
+        DisplayListBox.Items.Clear()
+
+    End Sub
 
 End Class
