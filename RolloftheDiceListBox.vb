@@ -4,6 +4,7 @@ Option Explicit On
 Public Class RolloftheDice
 
     Sub RollingDice()
+        SetDefaults()
         Randomize()
         Dim firstRollValue As Integer
         Dim secondRollValue As Integer
@@ -49,4 +50,12 @@ Public Class RolloftheDice
         Next
 
     End Sub
+    Sub SetDefaults()
+
+        'Sets a starting point for the program by setting the Display List Box to start empty and focus on the Roll Button
+        DisplayListBox.SelectedIndex = -1
+
+        RollButton.Focus()
+    End Sub
+
 End Class
