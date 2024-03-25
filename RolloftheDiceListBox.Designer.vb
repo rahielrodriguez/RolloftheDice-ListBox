@@ -23,7 +23,7 @@ Partial Class RolloftheDice
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.DisplayListBox = New System.Windows.Forms.ListBox()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.ProgramStrip = New System.Windows.Forms.MenuStrip()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RollToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ClearToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -33,7 +33,7 @@ Partial Class RolloftheDice
         Me.RollButton = New System.Windows.Forms.Button()
         Me.ClearButton = New System.Windows.Forms.Button()
         Me.ExitButton = New System.Windows.Forms.Button()
-        Me.MenuStrip1.SuspendLayout()
+        Me.ProgramStrip.SuspendLayout()
         Me.SuspendLayout()
         '
         'DisplayListBox
@@ -45,15 +45,15 @@ Partial Class RolloftheDice
         Me.DisplayListBox.Size = New System.Drawing.Size(805, 324)
         Me.DisplayListBox.TabIndex = 4
         '
-        'MenuStrip1
+        'ProgramStrip
         '
-        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.HelpToolStripMenuItem})
-        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
-        Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(829, 28)
-        Me.MenuStrip1.TabIndex = 5
-        Me.MenuStrip1.Text = "MenuStrip1"
+        Me.ProgramStrip.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.ProgramStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.HelpToolStripMenuItem})
+        Me.ProgramStrip.Location = New System.Drawing.Point(0, 0)
+        Me.ProgramStrip.Name = "ProgramStrip"
+        Me.ProgramStrip.Size = New System.Drawing.Size(829, 28)
+        Me.ProgramStrip.TabIndex = 5
+        Me.ProgramStrip.Text = "ProgramStrip"
         '
         'FileToolStripMenuItem
         '
@@ -65,19 +65,19 @@ Partial Class RolloftheDice
         'RollToolStripMenuItem
         '
         Me.RollToolStripMenuItem.Name = "RollToolStripMenuItem"
-        Me.RollToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.RollToolStripMenuItem.Size = New System.Drawing.Size(126, 26)
         Me.RollToolStripMenuItem.Text = "Roll"
         '
         'ClearToolStripMenuItem
         '
         Me.ClearToolStripMenuItem.Name = "ClearToolStripMenuItem"
-        Me.ClearToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.ClearToolStripMenuItem.Size = New System.Drawing.Size(126, 26)
         Me.ClearToolStripMenuItem.Text = "Clear"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(126, 26)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'HelpToolStripMenuItem
@@ -90,7 +90,7 @@ Partial Class RolloftheDice
         'AboutToolStripMenuItem
         '
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(133, 26)
         Me.AboutToolStripMenuItem.Text = "About"
         '
         'RollButton
@@ -129,18 +129,18 @@ Partial Class RolloftheDice
         Me.Controls.Add(Me.DisplayListBox)
         Me.Controls.Add(Me.ClearButton)
         Me.Controls.Add(Me.RollButton)
-        Me.Controls.Add(Me.MenuStrip1)
-        Me.MainMenuStrip = Me.MenuStrip1
+        Me.Controls.Add(Me.ProgramStrip)
+        Me.MainMenuStrip = Me.ProgramStrip
         Me.Name = "RolloftheDice"
         Me.Text = "Roll of the Dice"
-        Me.MenuStrip1.ResumeLayout(False)
-        Me.MenuStrip1.PerformLayout()
+        Me.ProgramStrip.ResumeLayout(False)
+        Me.ProgramStrip.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
     Friend WithEvents DisplayListBox As ListBox
-    Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents ProgramStrip As MenuStrip
     Friend WithEvents FileToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents HelpToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents RollButton As Button
